@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F5F5F5;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.slide{
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+   padding: 40px;
+   border-radius: 10px;
+   color: #676767;
+   line-height: 1.4;
+}
+
+.images{
+   @apply w-[65px] rounded-full mr-[10px] border-[4px] border-title;
+}
+
+.contact form input, .contact form textarea{
+    @apply block w-full bg-inputText px-8 py-3 border-0 outline-0 mb-4 mt-2 resize-none rounded-lg text-base
+}
+
+.contact label{
+    @apply font-semibold 
+}
